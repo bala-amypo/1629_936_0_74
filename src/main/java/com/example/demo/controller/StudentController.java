@@ -1,12 +1,15 @@
 package com.example.demo.controller;
-
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.Restcontroller;
 import org.springframework.web.bind.annotation.Restcontroller;
 
 @Restcontroller
 public class StudentController{
  @Autowired StudentService ser;
 
- @PostMappimg("/post")
+ @PostMapping("/post")
 
- public St sendData()
+ public StudentEntity sendData(@RequestBody StudentEntity stu){
+    return ser.postData(stu);
+ }
 }
