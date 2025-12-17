@@ -3,7 +3,7 @@ package com.example.demo.entity
 @Entity
 public class StudentEntity{
 private Integer id;
-private String username;
+private String name;
 private String email;
 private String password;
 private Date created;
@@ -42,8 +42,12 @@ public void setCreated(Date created){
 public StudentEntity(){
 
 }
-public StudentEntity(Integer id,String username,String email,String password, Date created){
-    this
+public StudentEntity(Integer id,String name,String email,String password, Date created){
+    this.id=id;
+    this.name=name;
+    this.email=email;
+    this.password=password;
+    this.created=created;
 }
 
 }   
