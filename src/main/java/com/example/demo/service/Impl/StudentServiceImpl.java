@@ -4,10 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.service;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
+import com.example.demo.repository.StudentRepo;
 
 @service
 public class StudentServiceImpl implements StudentService{
-       @Autowired StudentRepository students;
+       @Autowired StudentRepository student;
        @Override
   public StudentEntity postData(StudentEntity stu){
     return student.save(stu);
