@@ -6,7 +6,7 @@ private Integer id;
 private String username;
 private String email;
 private String password;
-private Date createAt;
+private Date created;
 
 public Integer getId(){
     return id;
@@ -31,6 +31,19 @@ public String getPassword(){
 }
 public void setPassword(String password){
     this.password=password;
+}
+public Date getCreated(){
+    return created;
+}
+public void setCreated(Date created){
+    this.created=created;
+}
+
+public StudentEntity(){
+
+}
+public StudentEntity(Integer id,String username,String email,String password, Date created){
+    this
 }
 
 }   
