@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.Restcontroller;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.example.demo.controller.StudentController;
+com.example.demo.entity.StudentEntity;
 
-@Restcontroller
+@RestController
 public class StudentController{
  @Autowired StudentService ser;
 
