@@ -51,7 +51,12 @@ public String getPassword(){
 public void setPassword(String password){
     this.password=password;
 }
-
+public int getAge(){
+return age;
+}
+public void setAge(int age){
+this.age=age;
+}
 public ValidationEntity(){
 
 }
@@ -64,6 +69,7 @@ public ValidationEntity( Long id,
     this.username=username;
     this.email=email;
     this.password=password;
+    this.age=age;
     
 }
 }
