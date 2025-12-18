@@ -29,4 +29,9 @@ public class ValidationController{
     // public String deleteValue(@PathVariable int id){
     //     return ser.deleteData(id);
     // }
+     @PostMapping("/getidd/{id}") //getMapping
+   public String getData1(@PathVariable int id){
+      return ser.getDataById(id);
+   }
+ 
 }
