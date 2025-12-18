@@ -19,15 +19,14 @@ public class StudentController{
  @Autowired StudentService ser;
 
  @PostMapping("/post")
-
  public StudentEntity sendData(@RequestBody StudentEntity stu){
     return ser.postData(stu);
  }
- @GetMapping("/get")
+ @PostMapping("/get")
  public List<StudentEntity> getval(){
    return ser.getAllData();
  }
- @DeleteMapping("/delete/{id}")
+ @PostMapping("/delete/{id}")
    public String deleteValue(@PathVariable int id){
       return ser.deleteData(id);
    }
