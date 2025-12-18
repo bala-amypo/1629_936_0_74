@@ -10,6 +10,8 @@ import com.example.demo.controller.StudentController;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 
+import java.util.List;
+
 @RestController
 public class StudentController{
  @Autowired StudentService ser;
