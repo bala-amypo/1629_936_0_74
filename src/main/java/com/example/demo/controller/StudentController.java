@@ -16,6 +16,7 @@ import java.util.List;
 
 @RestController
 public class StudentController{
+   
  @Autowired StudentService ser;
 
  @PostMapping("/post")
