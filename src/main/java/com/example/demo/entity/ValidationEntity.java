@@ -2,6 +2,7 @@ package com.example.demo.entity;
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.persistence.GenerationType; 
 import jakarta.validation.constraints.NotNull; 
 import jakarta.validation.constraints.Size;
@@ -26,14 +27,14 @@ public class ValidationEntity{
     @Positive(message="age must be a positive number")
     private int age;
 
-    public Integer getId(){
+    public Long getId(){
     return id;
 }
 public void setId(Long id){
     this.id=id;
 }
 public String getUsername(){
-    return name;
+    return username;
 }
 public void setUsername(String name){
     this.username=username;
