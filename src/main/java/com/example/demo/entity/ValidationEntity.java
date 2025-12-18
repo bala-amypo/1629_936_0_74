@@ -36,7 +36,7 @@ public String getUsername(){
     return name;
 }
 public void setUsername(String name){
-    this.name=name;
+    this.username=username;
 }
 public String getEmail(){
     return email;
