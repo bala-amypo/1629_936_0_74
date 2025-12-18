@@ -24,7 +24,7 @@ public class StudentServiceImpl implements StudentService{
       return "User with "+id+"deleted successfully";
     }
     @Override
-    public StudentEntity getData(@PathVariable int id){
+    public StudentEntity getData(int id){
     return student.findById(id).orElse(null);
    
 }
