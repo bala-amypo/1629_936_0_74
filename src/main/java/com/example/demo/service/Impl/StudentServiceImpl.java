@@ -7,7 +7,6 @@ import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepo;
 import java.util.List;
 
-
 @Service
 public class StudentServiceImpl implements StudentService{
        @Autowired StudentRepo student;
