@@ -25,7 +25,7 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public StudentEntity getData(@Pathvariable int id){
-    return ser.getData(id).orElse(null);
+    return ser.findById(id).orElse(null);
    
 }
 }
