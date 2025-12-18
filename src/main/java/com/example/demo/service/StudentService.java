@@ -6,7 +6,8 @@ import java.util.List;
 public interface StudentService{
     StudentEntity postData(StudentEntity student); //method declaration
      List<StudentEntity>getAllData();
-        
+
+       String deteData(int id); 
     
    
 }
