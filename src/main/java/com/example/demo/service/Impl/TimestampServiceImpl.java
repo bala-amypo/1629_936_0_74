@@ -11,8 +11,8 @@ import com.example.demo.repository.TimestampRepo;
 public class TimestampServiceImpl implements TimestampService{
     @Autowired TimestampRepo TR; 
     @Override
-     public Timestamp postValue1(Timestamp tt){
-        return TR.save(tt);
+     public Timestamp postValue1(Timestamp t){
+        return TR.save(t);
      }
 }
           
