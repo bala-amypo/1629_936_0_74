@@ -19,8 +19,8 @@ public class IdEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private int cardNo;
-    private int student_id;
+//     private int student_id;
     @OneToOne
-    @JoinColumn(name="private String email;")
+    @JoinColumn(name="student_id")
     private stuEntity stu;
     }
