@@ -7,6 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
 
 @Entity
 @Data
@@ -18,4 +19,6 @@ public class IdEntity{
     private Integer id;
     private int cardNo;
     private int student_id;
+    @OneToOne
+    stuEntity 
     }
