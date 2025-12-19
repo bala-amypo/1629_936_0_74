@@ -30,7 +30,7 @@ public class ValidationController{
     //     return ser.deleteData(id);
     // }
      @GetMapping("/getidd/{id}") //getMapping
-   public String getData1(@PathVariable int id){
+   public String getData1(@PathVariable Long id){
       return serv.getDataByIdd(id);
    }
  

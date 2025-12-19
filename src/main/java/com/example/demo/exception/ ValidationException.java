@@ -1,6 +1,7 @@
 package com.example.demo.exception;
 
-import com.example.demo.exception.ValidationException;
+import com.example.demo.exception;
+
 
 public class ValidationException extends RuntimeException{
 
