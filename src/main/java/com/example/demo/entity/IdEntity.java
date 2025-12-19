@@ -23,4 +23,3 @@ public class IdEntity{
     @OneToOne
     @JoinColumn(name="student_id")
     private stuEntity stu;
-    
