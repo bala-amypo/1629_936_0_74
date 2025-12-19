@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 // import java.util.List;
 // import org.springframework.web.bind.annotation.DeleteMapping;
-// import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PathVariable;
 import jakarta.validation.Valid;
 
 
@@ -31,7 +31,7 @@ public class ValidationController{
     // }
      @GetMapping("/getidd/{id}") //getMapping
    public String getData2(@PathVariable Long id){
-      return serv.getDataByIdd(id);
+      return serv.getData1(id);
    }
  
 }
