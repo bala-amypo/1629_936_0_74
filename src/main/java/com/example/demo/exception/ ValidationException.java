@@ -1,10 +1,10 @@
-package com.example.demo.exception
+package com.example.demo.exception;
 
 import com.example.demo.exception.ValidationException;
 
 public class ValidationException extends RuntimeException{
 
-public ValidateException(String message){
+public ValidationException(String message){
     super(message);
     
     
