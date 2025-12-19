@@ -20,5 +20,7 @@ public class IdEntity{
     private int cardNo;
     private int student_id;
     @OneToOne
-    stuEntity 
+    stuEntity stu
+    @JoinColumn(name="private String email;")
+    private 
     }
