@@ -1,22 +1,22 @@
-package com.example.demo.entity;
+// package com.example.demo.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Data;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Entity;
+// import lombok.AllArgsConstructor;
+// import lombok.NoArgsConstructor;
+// import lombok.Data;
+// import jakarta.persistence.GeneratedValue;
+// import jakarta.persistence.Id;
+// import jakarta.persistence.GenerationType;
+// import jakarta.persistence.Entity;
 
-@Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class stuEntity{
-     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer id;
-    private String name;
-    private String email;
-    private String address;
-    }
+// @Entity
+// @Data
+// @AllArgsConstructor
+// @NoArgsConstructor
+// public class stuEntity{
+//      @Id
+//     @GeneratedValue(strategy=GenerationType.IDENTITY)
+//     private Integer id;
+//     private String name;
+//     private String email;
+//     private String address;
+//     }
