@@ -21,20 +21,20 @@ public class Timestamp{
     private Long id;
     private String name;
     private String email;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private LocalDateTime createAt;
+    private LocalDateTime updateAt;
     
     @PrePersist
     public void OnCreate(){
     LocalDateTime now=LocalDateTime.now();
-    if(this.createdAt==null){
-        this.createdAt=now;
+    if(this.createAt==null){
+        this.createAt=now;
     }
-    this.updatedAt=now;
+    this.updateAt=now;
     }
     @PreUpdate
     public void OnUpdate(){
     LocalDateTime now=LocalDateTime.now();
-      this.updatedAt=now;
+      this.updateAt=now;
     }
 }
