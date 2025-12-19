@@ -8,8 +8,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
+import jakarta.persistence.PrePersist;
 
 @Entity
+@PrePersist
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
