@@ -16,7 +16,7 @@ import jakarta.persistence.Entity;
 public class IdentityEntity{
      @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
-    private String name;
-    private String address;
+    private Integer id;
+    private String cardNo;
+    private String student_id;
     }
