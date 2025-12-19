@@ -14,7 +14,7 @@ public class TimestampController{
     @Autowired TimestampService TR;
     
     @PostMapping("/posting")
-    public Timestamp postData(@RequestBody Timestamp t){
+    public Timestamp postTimeData(@RequestBody Timestamp t){
         return TR.postValue1(t);
     }
 }

@@ -13,7 +13,7 @@ import jakarta.persistence.Entity;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TimeStamp{
+public class Timestamp{
      @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
