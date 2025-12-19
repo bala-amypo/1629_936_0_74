@@ -13,10 +13,10 @@ import jakarta.persistence.Entity;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class IdentityEntity{
+public class IdEntity{
      @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private String cardNo;
-    private String student_id;
+    private int cardNo;
+    private int student_id;
     }
