@@ -3,7 +3,10 @@ package com.example.demo.entity;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
-
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.GenerationType;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -16,5 +19,5 @@ public class TimeStamp{
     private String name;
     private String email;
     private LocalDateTime createdAt;
-    private LocalDate
+    private LocalDateTime updatedAt;
 }
