@@ -15,6 +15,6 @@ public class TimestampController{
     
     @PostMapping("/posting")
     public Timestamp postData(@RequestBody Timestamp t){
-        return valid.postValue1(t);
+        return TR.postValue1(t);
     }
 }
