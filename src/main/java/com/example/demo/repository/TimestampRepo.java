@@ -5,6 +5,6 @@ import com.example.demo.entity.Timestamp;
 
 
 @Repository
-public interface TimstampRepo extends JpaRepository<Timestamp,Long>{
+public interface TimestampRepo extends JpaRepository<Timestamp,Long>{
 
 }
