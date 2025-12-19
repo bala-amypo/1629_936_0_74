@@ -17,7 +17,7 @@ public class ValidationController{
     @Autowired ValidationService serv;
     @PostMapping("/post1")
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity stu){
-        return ser.postData(stu);
+        return serv.postData(stu);
     }
 
     // @GetMapping("/get")
