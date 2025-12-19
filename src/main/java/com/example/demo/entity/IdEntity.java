@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 
 @Entity
 @Data
@@ -20,7 +21,6 @@ public class IdEntity{
     private int cardNo;
     private int student_id;
     @OneToOne
-    stuEntity stu
     @JoinColumn(name="private String email;")
-    private 
+    private stuEntity stu;
     }
