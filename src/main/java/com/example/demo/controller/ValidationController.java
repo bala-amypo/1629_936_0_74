@@ -1,37 +1,29 @@
 package com.example.demo.controller;
+
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import com.example.demo.entity.ValidationEntity;
-import com.example.demo.service.ValidationService;
-import org.springframework.beans.factory.annotation.Autowired; 
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
-// import java.util.List;
-// import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import jakarta.validation.Valid;
+
+import com.example.demo.entity.ValidationEntity;
+import com.example.demo.service.ValidationService;
 
 
 @RestController
 public class ValidationController{
-    @Autowired ValidationService serv;
-    @PostMapping("/post1")
-    public ValidationEntity sendData(@Valid @RequestBody ValidationEntity stu){
-        return serv.postData(stu);
+
+    @Autowired ValidationService valid;
+    
+    @PostMapping("/valpost")
+    public ValidationEntity postData(@Valid @RequestBody ValidationEntity val){
+        return valid.postValue(val);
     }
-
-    // @GetMapping("/get")
-    // public List<StudentEntity> getVal(){
-    //     return ser.getAllData();
-    // }
-
-    // @DeleteMapping("/delete{id}")
-    // public String deleteValue(@PathVariable int id){
-    //     return ser.deleteData(id);
-    // }
-     @GetMapping("/getidd/{id}") //getMapping
-   public String getData2(@PathVariable Long id){
-      return serv.getDataa(id);
-   }
- 
+                                     
+    @GetMapping("/getvalid/{id}")
+        public ValidationEntity getvaldataid(@PathVariable Long id){
+            return valid.getvalData(id);
 }
+}  
