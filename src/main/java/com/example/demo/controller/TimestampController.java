@@ -13,7 +13,7 @@ import com.example.demo.service.TimestampService;
 
 
 @RestController
-public class ValidationController{
+public class TimestampController{
 
     @Autowired TimestampService TR;
     
