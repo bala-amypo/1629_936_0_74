@@ -22,4 +22,5 @@ public class IdEntity{
 //     private int student_id;
     @OneToOne
     @JoinColumn(name="student_id")
-    private stuEntity stu;
+    private StuEntity stu;
+    }
