@@ -10,7 +10,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
-import lombok.@NoArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Data;
 
 
@@ -82,4 +82,5 @@ public class ValidationEntity{
 //     this.age=age;
     
 // }
- }
+}
+ 
