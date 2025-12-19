@@ -23,11 +23,8 @@ public class Timestamp{
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-
-
     
     @PrePersist
- 
     public void OnCreate(){
     LocalDateTime now=LocalDateTime.now();
     if(this.createdAt==null){
@@ -36,7 +33,6 @@ public class Timestamp{
     this.updatedAt=now;
     }
     @PreUpdate
-    
     public void OnUpdate(){
     LocalDateTime now=LocalDateTime.now();
       this.updatedAt=now;
