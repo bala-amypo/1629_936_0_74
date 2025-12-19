@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 @Entity
 @Data
@@ -25,10 +26,13 @@ public class Timestamp{
 
     @PrePersist
     public void OnCreate(){
-    LocalDateTime now=new LocalDateTime().now();
+    LocalDateTime now=new LocalDateTime.now();
     this.createdAt=now;
     this.updatedAt=now;
     }
     @PreUpdate
     
+    public void OnUpdate(){
+      this.updatedAt=now;
+    }
 }
